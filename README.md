@@ -1,4 +1,5 @@
 # financial
 # 基金管理项目
-# Gradle 3.2.1
-# springboot 1.5.4
+# Gradle 4.8
+# springboot 2.0.3
+# mysql驱动 8.0.11
