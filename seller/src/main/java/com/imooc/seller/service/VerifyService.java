@@ -124,7 +124,7 @@ public class VerifyService {
         for (String line : lines) {
             orders.add(parseLine(line));
         }
-        verifyRepository.save(orders);
+        verifyRepository.saveAll(orders);
 
 
     }

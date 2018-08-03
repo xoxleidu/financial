@@ -31,8 +31,10 @@
         <password>dev-pass</password>
     </group>
     <management-center enabled="true">http://localhost:8090/hazelcast-mancenter</management-center>
+    <!--<management-center enabled="true">http://localhost:8090/hazelcast-mancenter</management-center>-->
     <network>
         <port auto-increment="true" port-count="100">5701</port>
+        <!--<port auto-increment="true" port-count="100">5701</port>-->
         <outbound-ports>
             <!--
             Allowed port range when connecting to other nodes.

@@ -126,7 +126,7 @@ public class ProductService {
 
         LOG.debug("查询单个产品，id={}", id);
 
-        Product product = repository.findOne(id);
+        Product product = repository.findById(id).orElse(null);
 
         LOG.debug("查询单个产品,结果={}", product);
 

@@ -1,6 +1,6 @@
 ext {
     versions = [
-            springBootVersion: '1.5.4.RELEASE'
+            springBootVersion: '2.0.3.RELEASE'
     ]
     libs = [
             common      :   [
@@ -9,7 +9,7 @@ ext {
                     "org.apache.commons:commons-lang3:3.5"
             ],
             mysql       :   [
-                    "mysql:mysql-connector-java:5.1.29"
+                    "mysql:mysql-connector-java:8.0.11"
             ],
             jsonrpc     :   [
                     "com.github.briandilley.jsonrpc4j:jsonrpc4j:1.5.0"

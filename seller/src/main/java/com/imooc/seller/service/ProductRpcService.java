@@ -51,11 +51,6 @@ public class ProductRpcService implements ApplicationListener<ContextRefreshedEv
         return product;
     }
 
-    /*//@PostConstruct
-    public void testFindAll(){
-        findAll();
-    }*/
-
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         List<Product> list = findAll();
@@ -64,6 +59,7 @@ public class ProductRpcService implements ApplicationListener<ContextRefreshedEv
         });
     }
 
+    //JmsListener监听事件
     @JmsListener(destination = MQ_DESTINATION)
     void updateCache(ProductStatusEvent event){
 
